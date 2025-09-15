@@ -1,0 +1,16 @@
+Chatbot Export Summary
+=========================
+
+Export Date: 2025-09-15 13:13:53.401067
+Training Examples: 562
+Number of Intents: 15
+Base Confidence Threshold: 0.15
+Intents: about_ieee, ask_benefits, ask_board_committees, ask_branch_awards, ask_career_support, ask_collaboration, ask_events, ask_leadership_opportunities, ask_location, ask_membership, ask_sensors_membership, ask_social_media, ask_student_chapters, farewell, greeting
+
+Files Exported:
+- intent_classifier_pipeline.joblib (Sklearn Pipeline)
+- chatbot_metadata.joblib (Labels, mappings, thresholds)
+- training_data.csv (Training data as CSV)
+- training_data.h5 (Training data as H5)
+- sbert_embeddings.h5 (SBERT embeddings)
+- export_summary.txt (This file)
