@@ -3,7 +3,9 @@ import joblib, os, pandas as pd, numpy as np
 import time
 
 # Paths
-OUTPUTS_DIR = r"E:\Ahmed Sameh Work\Projects\ieee bue chatbot\outputs"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+OUTPUTS_DIR = os.path.join(BASE_DIR, "outputs")
+
 PIPELINE_PATH = os.path.join(OUTPUTS_DIR, "intent_classifier_pipeline.joblib")
 METADATA_PATH = os.path.join(OUTPUTS_DIR, "chatbot_metadata.joblib")
 TRAINING_DATA_PATH = os.path.join(OUTPUTS_DIR, "training_data.csv")
