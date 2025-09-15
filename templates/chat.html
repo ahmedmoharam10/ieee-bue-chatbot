@@ -100,6 +100,7 @@
 </head>
 <body>
   <div class="header">
+    <!-- Updated to load relative path from static folder -->
     <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo">
     <h2>IEEE BUE Chatbot</h2>
   </div>
@@ -129,7 +130,6 @@
         </div>
       `;
 
-      // Scroll to bottom
       chatBox.scrollTop = chatBox.scrollHeight;
 
       // Call backend
@@ -149,10 +149,7 @@
         </div>
       `;
 
-      // Scroll to bottom again
       chatBox.scrollTop = chatBox.scrollHeight;
-
-      // Clear input
       input.value = "";
     }
 
